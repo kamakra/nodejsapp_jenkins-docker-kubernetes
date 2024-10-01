@@ -25,7 +25,7 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: nodeapp-service
+  name: nodeapp-servicekkv
 spec:
   selector:
     app: nodeapp 
@@ -40,7 +40,7 @@ spec:
 apiVersion: route.openshift.io/v1
 kind: Route
 metadata:
-  name: nodeapp-route
+  name: nodeapp-routekkv
 spec:
   to:
     kind: Service
