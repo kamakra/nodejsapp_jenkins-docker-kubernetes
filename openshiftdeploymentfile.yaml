@@ -1,11 +1,11 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: nodeapp-deployment
+  name: nodeapp-deploykkv
   labels:
     app: nodeapp
 spec:
-  replicas: 5
+  replicas: 3
   selector:
     matchLabels:
       app: nodeapp
@@ -44,7 +44,7 @@ metadata:
 spec:
   to:
     kind: Service
-    name: nodeapp-service  # Name of the service to expose
+    name: nodeapp-servicekkv  # Name of the service to expose
   port:
     targetPort: 3000  # Port to expose on the route
   tls:
